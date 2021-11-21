@@ -36,7 +36,13 @@ function MobilePricingCard({ setPriceActive, priceActive, tier, price }) {
           <VStack alignItems="flex-start">
             <Flex w="100%" justifyContent="space-between">
               <Text fontWeight="600">{tier}</Text>
-              <Icon as={BsChevronUp} onClick={() => setPriceActive("")} />
+              <Button
+                variant="ghost"
+                onClick={() => setPriceActive("")}
+                _hover={{ cursor: "pointer" }}
+              >
+                <Icon as={BsChevronUp} />
+              </Button>
             </Flex>
 
             <Text fontWeight="400" fontSize="12px" top="20px" left="15px">
@@ -115,6 +121,8 @@ function MobilePricingCard({ setPriceActive, priceActive, tier, price }) {
       </Box>
 
       <Box
+        _hover={{ cursor: "pointer" }}
+        onClick={() => setPriceActive(tier)}
         visibility={priceActive === tier ? "hidden" : "visible"}
         justifyContent="space-between"
         d="flex"
@@ -126,7 +134,7 @@ function MobilePricingCard({ setPriceActive, priceActive, tier, price }) {
         alignItems="center"
       >
         <Text fontWeight="600">{tier}</Text>
-        <Icon as={BsChevronDown} onClick={() => setPriceActive(tier)} />
+        <Icon as={BsChevronDown} />
       </Box>
     </>
   );

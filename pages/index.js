@@ -146,8 +146,13 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consetrtur sadipscing elitr, sed
                 </Text>
               </VStack>
-              <Box overflowX="scroll" w="100%">
-                <Flex pos="relative" h="auto" minW="1000px" w="100%">
+              <Box
+                h="600px"
+                px={{ base: "0", sm: "0", md: "30px" }}
+                overflowX="auto"
+                w="100%"
+              >
+                <Flex pos="relative" h="500px" minW="900px" w="100%">
                   <BlogCard image="2" />
                   <BlogCard image="3" />
                   <BlogCard image="4" />
@@ -159,6 +164,7 @@ export default function Home() {
             bgColor="#0A891E"
             w="100%"
             flexWrap="wrap"
+            justifyContent="center"
             borderRadius={{ base: "0", sm: "0", md: "10px" }}
             h="auto"
           >
@@ -167,9 +173,9 @@ export default function Home() {
                 case 0:
                   return (
                     <Box
-                      p={{ base: "7%", sm: "4%", md: "0" }}
+                      p={{ base: "0%", sm: "4%", md: "0" }}
                       w={{
-                        base: "calc(100% / 2)",
+                        base: "40%",
                         sm: "calc(100% / 3)",
                         md: "calc(100% / 6)",
                       }}
@@ -192,9 +198,9 @@ export default function Home() {
                 case 5:
                   return (
                     <Box
-                      p={{ base: "7%", sm: "4%", md: "0" }}
+                      p={{ base: "0%", sm: "4%", md: "0" }}
                       w={{
-                        base: "calc(100% / 2)",
+                        base: "40%",
                         sm: "calc(100% / 3)",
                         md: "calc(100% / 6)",
                       }}
@@ -217,9 +223,9 @@ export default function Home() {
                 default:
                   return (
                     <Box
-                      p={{ base: "7%", sm: "4%", md: "0" }}
+                      p={{ base: "0", sm: "4%", md: "0" }}
                       w={{
-                        base: "calc(100% / 2)",
+                        base: "40%",
                         sm: "calc(100% / 3)",
                         md: "calc(100% / 6)",
                       }}

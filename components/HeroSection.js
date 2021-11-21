@@ -154,7 +154,6 @@ function HeroSection() {
           </Box>
           <Box
             display={{ base: "block", sm: "block", md: "none" }}
-            visibility={heroMenu ? "visible" : "hidden"}
             pos="absolute"
             top="80px"
             border="1px solid"
@@ -162,6 +161,9 @@ function HeroSection() {
             w="100%"
             h="auto"
             right="0"
+            opacity={heroMenu ? 1 : 0}
+            visibility={heroMenu ? "visible" : "hidden"}
+            transition="opacity 300ms, visibility 300ms 0s"
             bgColor="#FFF"
             borderRadius="5px"
             boxShadow="0px 5px 30px rgba(0,0,0,0.5)"
@@ -177,6 +179,11 @@ function HeroSection() {
                   case true:
                     return (
                       <ListItem
+                        _hover={{
+                          cursor: "pointer",
+                          bgColor: "secondary_green",
+                          color: "#FFF",
+                        }}
                         borderBottom="1px solid"
                         borderColor="light_grey"
                         py="10px"
@@ -190,6 +197,11 @@ function HeroSection() {
                   case false:
                     return (
                       <ListItem
+                        _hover={{
+                          cursor: "pointer",
+                          bgColor: "secondary_green",
+                          color: "#FFF",
+                        }}
                         borderBottom="1px solid"
                         borderColor="light_grey"
                         py="10px"
