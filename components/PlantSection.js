@@ -61,8 +61,18 @@ function PlantSection() {
                 </AspectRatio>
               </Box>
               <VStack spacing="-2px" alignItems="flex-start">
-                <Text fontWeight="600">Plant Product Name</Text>
-                <Text color="main_green" fontWeight="600">
+                <Text
+                  fontSize={{ base: "14px", sm: "14px", md: "16px" }}
+                  textAlign="left"
+                  fontWeight="600"
+                >
+                  Plant Product Name
+                </Text>
+                <Text
+                  fontSize={{ base: "14px", sm: "14px", md: "16px" }}
+                  color="main_green"
+                  fontWeight="600"
+                >
                   HK$65.00
                 </Text>
               </VStack>
