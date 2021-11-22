@@ -8,6 +8,7 @@ import {
   Button,
   Text,
   VStack,
+  Image,
 } from "@chakra-ui/react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -89,7 +90,8 @@ function MobileNav({ categoryItems, navItems }) {
         px={{ base: "30px", md: "30px", lg: "0", xl: "0" }}
         pos="relative"
       >
-        <Box w="100px" border="2px solid" h="30px"></Box>
+        <Image w="120px" objectFit="contain" src="../main_logo.png" />
+
         <Divider
           pos="absolute"
           bottom="0"

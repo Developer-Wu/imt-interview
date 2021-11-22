@@ -9,6 +9,7 @@ import {
   HStack,
   Spacer,
   Icon,
+  Flex,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
@@ -141,15 +142,26 @@ function HeroSection() {
               border="2px solid"
               borderColor="light_grey"
               p="20px"
+              d="flex"
+              boxShadow="inset 0px 10px 20px -15px rgba(0,0,0,0.3)"
+              alignItems="center"
+              h="100%"
             >
-              <VStack spacing="0" alignItems="flex-start">
+              <Image w="45px" src="../lemon.png" />
+              <Flex
+                justifyContent="space-between"
+                h="100%"
+                flexDir="column"
+                spacing="0"
+                alignItems="flex-start"
+              >
                 <Text fontSize="11px" color="main_green" fontWeight="600">
                   ORGANIC COMPANY
                 </Text>
-                <Text fontSize="20px" color="main_green" fontWeight="600">
+                <Text fontSize="17px" color="main_green" fontWeight="600">
                   COMPANY LOGO
                 </Text>
-              </VStack>
+              </Flex>
             </Box>
           </Box>
           <Box

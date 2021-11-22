@@ -40,7 +40,7 @@ function DesktopNav({ navItems, categoryItems }) {
           borderColor="light_grey"
           bgColor="light_grey"
         />
-        <Box border="2px solid" w="100px" h="60px"></Box>
+        <Image w="120px" objectFit="contain" src="../main_logo.png" />
         <Spacer />
         <UnorderedList listStyleType="none" textDecor="none">
           <HStack spacing="30px">
